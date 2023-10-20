@@ -14,7 +14,7 @@ root.render(
   <Canvas
   camera={{
      fov:45,
-     near:0.1,
+     near:0.9,
      far:2000,
      position:[-3,1.5,4]
   }}
