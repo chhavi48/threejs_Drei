@@ -9,9 +9,14 @@ export default function Laptop() {
   return (
     <>
       <Environment preset="sunset" />
-      <PresentationControls global polar={[-0.4,0.2]} azimuth={[-0.4,0.2]}>
+      <PresentationControls global 
+      polar={[-0.4,0.2]} azimuth={[-0.4,0.2]}
+      >
         <primitive object={laptop.scene} position-y={-1.2} />
-        <Html wrapperClass="laptop">
+        <Html wrapperClass="laptop" position={[0.23,0.2,-1.8]} transform
+        distanceFactor={1.20}
+        rotation-x={-0.29}
+        >
           <iframe src="https://chhavisrivastav.vercel.app/"/>
         </Html>
       </PresentationControls>
